@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "tight-trello",
+  "description": "chrome extension to remove extra trello garbage",
+  "version": "1.0.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*"],
+      "js": ["tight.js"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
